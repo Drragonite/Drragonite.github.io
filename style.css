@@ -1,0 +1,148 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: white;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: rgba(52, 211, 153, 0.1) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2.5rem !important;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+h2 a {
+    color: #34D399;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* Input container */
+.w-full {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Input field styling */
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #34D399;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: #2DD4BF;
+}
+
+/* Button styling */
+button {
+    background-color: #34D399;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+button:hover {
+    background-color: #2DD4BF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 212, 191, 0.3);
+}
+
+/* Flex container */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+/* Border styling */
+.border-b {
+    border-bottom: 2px solid rgba(45, 212, 191, 0.3);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+    .container {
+        padding: 1.5rem !important;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 0.6rem 1.2rem;
+    }
+}
